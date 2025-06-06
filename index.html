@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cart-container">
+    <h1>Shopping Cart</h1>
+    <div class="cart-inputs">
+      <input type="text" id="product-name" placeholder="Product Name" />
+      <input type="number" id="product-price" placeholder="Product Price" />
+      <button onclick="addProduct()" id="add-btn">Add Product</button>
+    </div>
+    <ul id="cart-list" class="cart-list"></ul>
+    <p class="cart-total">Total: $<span id="total-price">0</span></p>
+    <!-- The "Clear Saved Cart" button is appended by JS -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

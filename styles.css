@@ -1,0 +1,125 @@
+body {
+  background: #23272f;
+  color: #fafafa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.cart-container {
+  background: #2c3140;
+  border-radius: 14px;
+  box-shadow: 0 2px 24px #0005;
+  padding: 36px 32px 24px 32px;
+  margin-top: 48px;
+  min-width: 350px;
+  max-width: 400px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #99ffac;
+  letter-spacing: 1px;
+}
+
+.cart-inputs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cart-inputs input {
+  padding: 7px 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #3a3f50;
+  background: #22262e;
+  color: #fff;
+  outline: none;
+  width: 45%;
+}
+
+.cart-inputs input:focus {
+  border-color: #99ffac;
+}
+
+#add-btn {
+  background: linear-gradient(90deg, #99ffac 30%, #45f7aa 100%);
+  color: #1c2b2b;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: filter 0.18s;
+}
+
+#add-btn:hover {
+  filter: brightness(1.13);
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.cart-list li {
+  background: #23272f;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-list li button {
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 6px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 12px;
+  transition: background 0.16s;
+}
+
+.cart-list li button:hover {
+  background: #c0392b;
+}
+
+.cart-total {
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: #d6ffe6;
+}
+
+button:focus, input:focus {
+  outline: 2px solid #99ffac;
+  outline-offset: 1px;
+}
+
+/* Style the clear cart button appended via JS */
+button:contains('Clear Saved Cart'), .clear-cart-btn {
+  display: block;
+  margin: 20px auto 0 auto;
+  background: #ffb84d;
+  color: #36330a;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.16s;
+}
+
+button:contains('Clear Saved Cart'):hover, .clear-cart-btn:hover {
+  background: #ffa100;
+}
