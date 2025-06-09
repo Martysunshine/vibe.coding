@@ -106,7 +106,7 @@ button:focus, input:focus {
 }
 
 /* Style the clear cart button appended via JS */
-button:contains('Clear Saved Cart'), .clear-cart-btn {
+.clear-cart-btn {
   display: block;
   margin: 20px auto 0 auto;
   background: #ffb84d;
@@ -120,6 +120,6 @@ button:contains('Clear Saved Cart'), .clear-cart-btn {
   transition: background 0.16s;
 }
 
-button:contains('Clear Saved Cart'):hover, .clear-cart-btn:hover {
+.clear-cart-btn:hover {
   background: #ffa100;
 }
